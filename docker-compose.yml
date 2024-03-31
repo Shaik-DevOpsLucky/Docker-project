@@ -1,0 +1,37 @@
+version: '3'
+services:
+  devops:
+    image: moulashaik/paytmmovies:latest
+    ports:
+      - "80:80"
+    volumes:
+      - "devopsvol"
+    deploy:
+      replicas: 3
+
+  dth:
+    image: moulashaik/paytmdth:latest
+    ports:
+      - "81:80"
+    volumes:
+      - "dth"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: rahamshaik/paytmrecharge:latest
+    ports:
+      - "82:80"
+    volumes:
+      - "recharge"
+    deploy:
+      replicas: 3
+
+  train:
+    image: moulashaik/paytmtrain:latest
+    ports:
+      - "83:80"
+    volumes:
+      - "train"
+    deploy:
+      replicas: 3

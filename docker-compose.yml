@@ -19,7 +19,7 @@ services:
       replicas: 3
 
   recharge:
-    image: moulahaik/paytmrecharge:latest
+    image: moulashaik/paytmrecharge:latest
     ports:
       - "82:80"
     volumes:

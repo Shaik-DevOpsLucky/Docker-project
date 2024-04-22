@@ -92,7 +92,7 @@ systemctl restart docker.service
 version: '3'
 services:
   devops:
-    image: moulashaik/paytmmovies:latest
+    image: moulashaik9618/paytmmovies:latest
     ports:
       - "80:80"
     volumes:
@@ -101,7 +101,7 @@ services:
       replicas: 3
 
   dth:
-    image: moulashaik/paytmdth:latest
+    image: moulashaik9618/paytmdth:latest
     ports:
       - "81:80"
     volumes:
@@ -110,7 +110,7 @@ services:
       replicas: 3
 
   recharge:
-    image: rahamshaik/paytmrecharge:latest
+    image: rahamshaik9618/paytmrecharge:latest
     ports:
       - "82:80"
     volumes:
@@ -119,7 +119,7 @@ services:
       replicas: 3
 
   train:
-    image: moulashaik/paytmtrain:latest
+    image: moulashaik9618/paytmtrain:latest
     ports:
       - "83:80"
     volumes:
